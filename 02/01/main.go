@@ -69,8 +69,8 @@ func IntersectRaySphere(origin, direction point, sphere Sphere) (float64, float6
 		return math.Inf(1), math.Inf(1)
 	}
 
-	t1 := (-float64(k2) + math.Sqrt(float64(discriminant))) / (2 * float64(k1))
-	t2 := (-float64(k2) - math.Sqrt(float64(discriminant))) / (2 * float64(k1))
+	t1 := (-k2 + math.Sqrt(discriminant)) / (2 * k1)
+	t2 := (-k2 - math.Sqrt(discriminant)) / (2 * k1)
 	return t1, t2
 }
 

@@ -112,7 +112,7 @@ func main() {
 		}
 	}
 
-	f, err := os.Create("image.png")
+	f, err := os.Create("chapter-02.png")
 	if err != nil {
 		panic(err)
 	}
